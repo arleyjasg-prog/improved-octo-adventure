@@ -71,33 +71,4 @@ if st.button("Calcular Rentabilidad y Riesgo"):
         st.subheader("📈 Gráfico de Comparación de Empresas:")
         st.dataframe(resumen.style.format("{:.2f}"))
 
-        # ====== GRÁFICO MEJORADO ======
-        st.subheader("Gráfico de Rentabilidad vs Riesgo")
-
-        fig, ax = plt.subplots(figsize=(8, 6))
-        ax.scatter(resumen["Riesgo (Volatilidad %)"], resumen["Rentabilidad esperada (%)"],
-                   color="royalblue", s=150, alpha=0.7, edgecolors="black")
-
-        # Etiquetas en cada punto
-        for i in resumen.index:
-            ax.text(
-                resumen["Riesgo (Volatilidad %)"][i] + 0.1,
-                resumen["Rentabilidad esperada (%)"][i] + 0.1,
-                i,
-                fontsize=9,
-                fontweight='bold',
-                color='darkblue'
-            )
-
-        # Títulos y formato
-        ax.set_xlabel("Riesgo (Volatilidad %)", fontsize=12)
-        ax.set_ylabel("Rentabilidad Esperada (%)", fontsize=12)
-        ax.set_title("Comparativo: Rendimiento vs Riesgo", fontsize=14, fontweight='bold')
-
-        # Cuadrícula y límites automáticos
-        ax.grid(True, linestyle="--", alpha=0.6)
-        plt.tight_layout()
-
-        # Mostrar en Streamlit
-        st.pyplot(fig)
-
+      
