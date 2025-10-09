@@ -67,8 +67,4 @@ if st.button("Calcular Rentabilidad y Riesgo"):
         st.subheader(" Grafico de Comparación de Empresas:")
         st.dataframe(resumen.style.format("{:.2f}"))
 
-        # Mostrar resultados
-        st.subheader("📈 Gráfico de Comparación de Empresas:")
-        st.dataframe(resumen.style.format("{:.2f}"))
-
       
