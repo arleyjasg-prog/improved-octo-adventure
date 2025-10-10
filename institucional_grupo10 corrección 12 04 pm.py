@@ -23,7 +23,8 @@ st.set_page_config(
 # =============================
 # FUNCIÓN PRINCIPAL
 # =============================
-def main()
+def main():
+    st.title("Bienvenidos a Código Espinoza 🧠")
     st.sidebar.header("Navegación")
 
     # =============================
