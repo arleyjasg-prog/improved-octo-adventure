@@ -20,12 +20,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# =============================
-# FUNCIÓN PRINCIPAL
-# =============================
-def main():
-    st.title("Bienvenidos a Código Espinoza 🧠")
-    st.sidebar.header("Navegación")
 
     # =============================
     # SECCIÓN: ANÁLISIS FINANCIERO
